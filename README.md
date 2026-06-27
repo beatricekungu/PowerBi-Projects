@@ -21,21 +21,20 @@ Globalmed's internal audits revealed that sensitive patient data was globally ac
 ---
 
 ## Project Artifact
-### Data Architecture & Security Validation
+### 1. Data Architecture & Security Validation
 To validate the Role-Based Access Control (RBAC) and Dynamic Data Masking (DDM) policies within Azure SQL, the database was queried under three distinct security contexts.
 
 **Baseline: Database Owner View**
 The system administrator (or DB Owner) retains full visibility into the raw data prior to applying restrictive roles. 
-![Database Owner View](Orginal%20screenshot.png)
+* [View Database Owner Screenshot](assets/Orginal%20screenshot.png)
 
 **Restricted: Data Analyst View**
-When querying the database as the `DataAnalyst` role, the masking functions are automatically applied to the Email, SSN, and Credit Card columns. This allows the analyst to perform necessary operational aggregations (e.g., counting patients by region or risk tier) without ever exposing raw PII.
-![Data Analyst View](Data%20Analyst%20Screenshot.png)
+When querying the database as the `DataAnalyst` role, the masking functions are automatically applied to the Email, SSN, and Credit Card columns. This allows the analyst to perform necessary operational aggregations without exposing raw PII.
+* [View Data Analyst Screenshot](assets/Data%20Analyst%20Screenshot.png)
 
 **Privileged: Chief Compliance Officer (CCO) View**
-Because the `ChiefComplianceOfficer` role was granted explicit `UNMASK` permissions in the architecture, they retain the ability to view the underlying sensitive data required for high-level audits and compliance investigations.
-![Chief Compliance Officer View](CCO%20Screenshot.png)
-
+Because the `ChiefComplianceOfficer` role was granted explicit `UNMASK` permissions, they retain the ability to view the underlying sensitive data required for audits.
+* [View Chief Compliance Officer Screenshot](assets/CCO%20Screenshot.png)
 
 ## Implementation Details & Source Code
 The following SQL script demonstrates the core logic used to instantiate the secure data environment, apply dynamic data masking to sensitive PII, and enforce least-privilege access via RBAC.
