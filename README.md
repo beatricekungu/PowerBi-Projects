@@ -26,7 +26,7 @@ To validate the Role-Based Access Control (RBAC) and Dynamic Data Masking (DDM) 
 
 **Baseline: Database Owner View**
 The system administrator (or DB Owner) retains full visibility into the raw data prior to applying restrictive roles. 
-* [View Database Owner Screenshot](assets/Orginal%20screenshot.png)
+(![Database Owner View](https://raw.githubusercontent.com/beatricekungu/PowerBi-Projects/main/Assets/database-owner-screenshot.png)
 
 **Restricted: Data Analyst View**
 When querying the database as the `DataAnalyst` role, the masking functions are automatically applied to the Email, SSN, and Credit Card columns. This allows the analyst to perform necessary operational aggregations without exposing raw PII.
