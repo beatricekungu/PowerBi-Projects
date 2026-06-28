@@ -24,7 +24,7 @@ Globalmed's internal audits revealed that sensitive patient data was globally ac
 ### 1. Data Architecture & Security Validation
 To validate the Role-Based Access Control (RBAC) and Dynamic Data Masking (DDM) policies within Azure SQL, the database was queried under three distinct security contexts.
 
-[![Database Owner](https://img.shields.io/badge/View_Database_Owner-0078D4?style=for-the-badge)](https://github.com/beatricekungu/PowerBi-Projects/tree/main/Assets/YOUR-FILE-NAME.png)
+[![View Database Owner](https://img.shields.io/badge/View_Database_Owner-0078D4?style=for-the-badge)](https://github.com/beatricekungu/PowerBi-Projects/blob/main/Assets/Orginal%20screenshot.png)
 
 **Baseline: Database Owner View**
 The system administrator (or DB Owner) retains full visibility into the raw data prior to applying restrictive roles. 
