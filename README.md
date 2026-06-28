@@ -84,3 +84,5 @@ CREATE USER ChiefComplianceOfficer WITHOUT LOGIN;
 GRANT SELECT ON Globalmed_Project TO DataAnalyst;
 GRANT SELECT ON Globalmed_Project TO ChiefComplianceOfficer;
 GRANT UNMASK TO ChiefComplianceOfficer;
+
+[![View Executive Deck](https://img.shields.io/badge/View_Executive_Deck-2C3E50?style=for-the-badge)](https://github.com/beatricekungu/globalmed-data-security/blob/main/Assets/Deck%20for%20Project.pdf)
