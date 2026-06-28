@@ -49,6 +49,7 @@ Because the `ChiefComplianceOfficer` role was granted explicit UNMASK permission
 
 [![View Chief Compliance Officer](https://img.shields.io/badge/View_Chief_Compliance_Officer-001F3F?style=for-the-badge)](https://github.com/beatricekungu/zero-trust-data-governance/blob/main/Assets/CCO%20Screenshot.png)
 
+[![View Executive Deck](https://img.shields.io/badge/View_Executive_Deck-2C3E50?style=for-the-badge)](https://github.com/beatricekungu/globalmed-data-security/blob/main/Assets/Deck%20for%20Project.pdf)
 ---
 
 ## Implementation Details & Source Code
@@ -85,4 +86,3 @@ GRANT SELECT ON Globalmed_Project TO DataAnalyst;
 GRANT SELECT ON Globalmed_Project TO ChiefComplianceOfficer;
 GRANT UNMASK TO ChiefComplianceOfficer;
 
-[![View Executive Deck](https://img.shields.io/badge/View_Executive_Deck-2C3E50?style=for-the-badge)](https://github.com/beatricekungu/globalmed-data-security/blob/main/Assets/Deck%20for%20Project.pdf)
